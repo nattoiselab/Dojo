@@ -1,5 +1,8 @@
 require([
-    "dojo/_base/window", "dojo/store/Memory", "dijit/form/FilteringSelect", "dojo/domReady!"
+    "dojo/_base/window", 
+    "dojo/store/Memory", 
+    "dijit/form/FilteringSelect", 
+    "dojo/domReady!"
 ], function(win, Memory, FilteringSelect){
     var stateStore = new Memory({
         data: [
