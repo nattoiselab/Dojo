@@ -4,11 +4,9 @@
 	         "dojo/data/ObjectStore",
 	         "dojo/store/Memory",
 	         "dojo/json",
-	         "dojo/_base/array",
 	         "dijit/form/FilteringSelect",
-	        // "dojo/parser",
 	         "dojo/domReady!"],
-	    function(dom, request, win, ObjectStore, Memory, JSON, arrayUtil, FilteringSelect){
+	    function(dom, request, win, ObjectStore, Memory, JSON, FilteringSelect){
 	        // Results will be displayed in resultDiv
 	        var resultDiv = dom.byId("resultDiv");
 	 
