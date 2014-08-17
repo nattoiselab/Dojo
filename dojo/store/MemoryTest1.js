@@ -9,7 +9,7 @@ function(dom, request, ObjectStore, Memory){
     var resultDiv = dom.byId("resultDiv");
   
     // Request the JSON data from the server
-    request.get("06dTest.json", {
+    request.get("MemoryTest1.json", {
 
     // Parse data from JSON to a JavaScript object
     handleAs: "json"
