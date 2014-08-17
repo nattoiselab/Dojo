@@ -27,7 +27,7 @@ require([
         name: "state",
         value: "CA",
         store: stateStore,
-        searchAttr: "id"
+        searchAttr: "name"
     }, "stateSelect");
     filteringSelect.placeAt(win.body()).startup();
 });
