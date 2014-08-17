@@ -1,0 +1,5 @@
+Programmatic example using a dojo.store
+
+To set the default value for a programmatic FilteringSelect, include the value attribute (the hidden text value to be submitted) in the attribute list passed to the constructor. To get the current value (the identity of the currently selected store item), get the value attribute. To get the text currently displayed in the textbox (the value of the currently selected store item’s attribute indicated by the FilteringSelect’s searchAttr property), get the displayedValue attribute.
+
+http://dojotoolkit.org/reference-guide/1.10/dijit/form/FilteringSelect.html
