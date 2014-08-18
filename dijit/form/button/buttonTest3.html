@@ -12,25 +12,44 @@
 		 
 	</head>
 	<body class="claro">
-		<h1>Demo: dijit/form/Button</h1>
+		<h1>Demo: A button using an icon (programmatic)</h1>
 		<p>
-			Below, we see <code>dijit/form/Button</code> in two forms: as a standard button, and
-			using an icon with no label.  Be sure to open the console to see messages when clicking
+			Below, we see <code>dijit/form/Button</code> in three forms: as a standard button, and
+			using an icon with no label and another one with label.  Be sure to open the console to see messages when clicking
 			the buttons!
 		</p>
 		<div>
-			<button id="btn" data-dojo-type="dijit/form/Button"
+			<button id="btn1a" data-dojo-type="dijit/form/Button"
 				data-dojo-props="
 					onClick:function(){ console.log('First button was clicked!'); }">
-				Click Me!
+			Click Me without label
 			</button>
-			<button id="btn2" data-dojo-type="dijit/form/Button"
+			<button id="btn1b" data-dojo-type="dijit/form/Button"
+				data-dojo-props="
+					label: 'Click me with label',
+					onClick:function(){ console.log('First button was clicked!'); }">
+			</button>
+			<button id="btn2a" data-dojo-type="dijit/form/Button"
 				data-dojo-props="
 					iconClass:'dijitIconNewTask',
 					showLabel:false,
+					title:'dijit_button',
 					onClick:function(){ console.log('Second button was clicked!'); }">
 				Click Me!
 			</button>
+			<button id="btn2b" data-dojo-type="dijit/form/Button"
+				data-dojo-props="
+					iconClass:'dijitIconNewTask',
+					showLabel:true,
+					onClick:function(){ console.log('Third button was clicked!'); }">
+				Click Me with icon
+			</button>
+			<p>
+			<b><i>Explanation:</i></b>
+			<li><code>iconClass:' '</code>: indicates what CSS class to use (to apply an image sprite)</li>
+			<li><code>showLabel: true</code>: determines whether to show any text in the button</li>
+			</li>
+			<p>
 			<p>
 			<b><i>Reference:</i></b>
 			<p>
