@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+	<link rel="stylesheet" href="../../../Shared/dojo-release-1.10.0/dijit/themes/claro/claro.css" media="screen">
+		
+	<script>dojoConfig = {parseOnLoad: true}</script>
+	<script src='../../../../DojoTutorial/Shared/dojo-release-1.10.0/dojo/dojo.js'></script>
+</head>
+
+<body class="claro">
+	<h1>Dojo Form Widget > dijit/form/RadioButton (1)</h1>
+	<h2>Create a RadioButton programmically</h2>
+	
+	<form id="myform">
+    	<input type="radio" 
+    			data-dojo-type="dijit/form/RadioButton" 
+    			name="drink" 
+    			id="radioOne"
+    			readOnly
+    			value="tea"/> 
+    	<label for="radioOne">Tea</label> <br />
+    	<input type="radio" 
+    			data-dojo-type="dijit/form/RadioButton" 
+    			name="drink" 
+    			id="radioTwo"
+    			title="Tool tip for Radio Button"
+    			value="coffee"/> 
+    	<label for="radioTwo">Coffee</label> <br />
+
+    	<button data-dojo-type="dijit/form/Button" 
+    			type="button">
+	        Show form submit value
+        	<script type="dojo/on" 
+        			data-dojo-event="click">
+	            require(["dojo/dom"], function(dom){
+                 	with(dom.byId('myform'))with(elements[0])with(elements[checked?0:1])alert(name+'='+value);
+                 	return false;
+            	});
+        	</script>
+    	</button>
+	</form>
+    <script type="text/javascript" 
+			src="radioButtonTest1.js"></script>
+	
+</body>
+</html>
