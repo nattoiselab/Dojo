@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Demo: Dijit textBox</title>
+		<!-- 
+		<link rel="stylesheet" href="dropdownButton1.css" 
+			media="screen">
+		 -->
+		<link rel="stylesheet" 
+			href="../../../../DojoTutorial/Shared/dojo-release-1.10.0/dijit/themes/claro/claro.css" 
+			media="screen">
+	</head>
+	<body class="claro">
+		<h1>Demo: A TextBox (declarative)</h1>
+		<p/>
+		<label for="text1">Text1:</label>
+		<input type="text" 
+			name="text1" 
+			data-dojo-type="dijit/form/TextBox"
+    		data-dojo-props="trim:true" 
+    		id="text1" />
+    	<i>Function: Auto-trimming TextBox</i>
+		<p/>
+		<label for="text2">Text2:</label>
+		<input type="text" 
+			name="text2" 
+			data-dojo-type="dijit/form/TextBox"
+    		data-dojo-props="propercase:true" 
+    		id="text2" />
+    	<i>Function: Proper-casing TextBox</i>
+		<p/>
+		<label for="text3">Text3:</label>
+		<input type="text" 
+			name="text3" 
+			data-dojo-type="dijit/form/TextBox"
+    		data-dojo-props="placeHolder:'Input your text'" 
+    		id="text3" />
+    	<i>Function: placeHolder TextBox</i>
+		<p/>
+		<label for="text4">Text4:</label>
+		<input type="text" 
+			name="text4" 
+			data-dojo-type="dijit/form/TextBox"
+    		data-dojo-props="maxLength: 10" 
+    		id="text4" />
+    	<i>Function: maxLength (10) TextBox</i>
+		<p/>
+		<label for="text4">Text5:</label>
+		<input type="text" 
+			name="text5" 
+			data-dojo-type="dijit/form/TextBox"
+    		data-dojo-props="tooltip:'This textbox widget specifies the tooltip to appear when the mouse is hovered over that text.'" 
+    		id="text5" />
+    	<i>Function: tooltip TextBox</i>
+				
+		<!-- load dojo and provide config via data attribute -->
+		<script src="../../../../DojoTutorial/Shared/dojo-release-1.10.0/dojo/dojo.js" data-dojo-config="isDebug: true, async: true, parseOnLoad: true"></script>
+		<script type="text/javascript" src="textBoxTest1.js">
+		</script>
+	</body>
+</html>
