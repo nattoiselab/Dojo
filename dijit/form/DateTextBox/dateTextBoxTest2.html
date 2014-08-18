@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+	<link rel="stylesheet" href="../../../Shared/dojo-release-1.10.0/dijit/themes/claro/claro.css" media="screen">
+		
+	<script>dojoConfig = {parseOnLoad: true}</script>
+	<script src='../../../../DojoTutorial/Shared/dojo-release-1.10.0/dojo/dojo.js'></script>
+</head>
+
+<body class="claro">
+	<h1>Dojo Form Widget > dijit/form/DateTextBox (2)</h1>
+	<h2>Create a DateTextBox with constraint declaratively</h2>
+	
+	<label for="fromDate">From:</label>
+	<input  data-dojo-id="myFromDate" 
+			type="text" 
+			name="fromDate" 
+			data-dojo-type="dijit/form/DateTextBox" 
+			required="true"
+    		onChange="myToDate.constraints.min = arguments[0];" />
+	
+	<label for="toDate">To:</label>
+	<input  data-dojo-id="myToDate" 
+			type="text" 
+			name="toDate" 
+			data-dojo-type="dijit/form/DateTextBox" 
+			required="true"
+    		onChange="myFromDate.constraints.max = arguments[0];" />
+    		
+    <script type="text/javascript" 
+			src="dateTextBoxTest2.js"></script>
+	
+</body>
+</html>
