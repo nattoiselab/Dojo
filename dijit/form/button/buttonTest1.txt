@@ -1,0 +1,5 @@
+<Description>
+
+To create dijit/form/Button with 2 different ways:
+1. Create a simple button declaratively
+2. Create a simple button programmatically
