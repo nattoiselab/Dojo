@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/dojo/1.10.0/dijit/themes/claro/claro.css" media="screen">
+	<link rel="stylesheet" href="../../../DojoTutorial/Shared/dojo-release-1.10.0/dijit/themes/claro/claro.css" media="screen">
+		
+	<script>dojoConfig = {parseOnLoad: true}</script>
+	<script src='../../../../DojoTutorial/Shared/dojo-release-1.10.0/dojo/dojo.js'></script>
+	
+	<script>
+require(["dojo/parser", "dijit/form/Button"]);
+	</script>
+</head>
+<body class="claro">
+	<h1>Dojo Form Widget > dijit/form/NumberTextBox (1)</h1>
+	<h2>Create a NumberTextBox declaratively</h2>
+	
+	<label for="q05">Integer between -20000 to +20000:</label>
+	
+	<input id="q05" type="text"
+    		data-dojo-type="dijit/form/NumberTextBox"
+    		name= "elevation"
+    		required="true"
+    		value="3000"
+    		data-dojo-props="constraints:{min:-20000,max:20000,places:0},
+    						invalidMessage:'Please enter a numeric value.',
+    						rangeMessage:'Invalid elevation.'" />
+    
+    <script>
+        // load requirements for declarative widgets in page content
+        require(["dojo/parser", "dijit/form/NumberTextBox"]);
+    </script>
+	
+</body>
+</html>
