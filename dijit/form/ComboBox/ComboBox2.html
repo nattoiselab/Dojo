@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+	<link rel="stylesheet" href="../../../Shared/dojo-release-1.10.0/dijit/themes/claro/claro.css" media="screen">
+		
+	<script>dojoConfig = {parseOnLoad: true}</script>
+	<script src='../../../../DojoTutorial/Shared/dojo-release-1.10.0/dojo/dojo.js'></script>
+	
+    <script type="text/javascript" 
+			src="comboBoxTest2.js"></script>
+</head>
+
+<body class="claro">
+    <div data-dojo-type="dojo/store/Memory"
+    	data-dojo-id="stateStore"
+    	data-dojo-props="data: [{id: 'y', name: 'yes'}, {id: 'n', name: 'no'}]">
+    </div>
+	<input data-dojo-type="dijit/form/ComboBox"
+    		value="yes"
+    		data-dojo-props="store:stateStore, searchAttr:'name'"
+    		name="state"
+    		id="stateInput" />
+</body>
+</html>
