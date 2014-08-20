@@ -1,0 +1,20 @@
+{
+   "request" : {
+       "sortcode": "120305",
+       "account": "10065754"
+   } ,
+   "accountInfo": {
+      "id": 10065754,
+      "name": "Current Account",
+      "holder": "M. Chapman",
+      "type" : "current",
+      "balance" : 402434,
+      "last5Transactions" : [
+          {"type": "C", "amount": 3212, "name": "102256"},
+          {"type": "D", "amount": 40000, "name": "Savings"},
+          {"type": "D", "amount": 7612, "name": "Prudential Insurance"},
+          {"type": "D", "amount": 5412, "name": "Virgin Media"},
+          {"type": "D", "amount": 3212, "name": "Mumtaz"}
+      ]
+   }  
+}   
