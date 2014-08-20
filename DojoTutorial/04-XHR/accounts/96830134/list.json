@@ -1,0 +1,44 @@
+{
+   "request" : {
+       "customerId": "96830134",
+       "status": "open"
+   },
+   "resultSet": [      
+      {
+         "currency": "GBP",
+         "sortcode": 120305,
+         "accounts": [
+            {
+               "id": 10065754,
+               "name": "Current",
+               "holder": "M. Chapman"
+            },
+            {
+               "id": 10065751,
+               "name": "Credit",
+               "holder": "Mr Martin Chapman"
+            }, {
+               "id": 30088223,
+               "name": "Savings",
+               "holder": "M. J. Chapman"
+            }
+         ]
+      },
+      {
+         "currency": "USD",
+         "sortcode": 370555,
+         "accounts": [
+            {
+               "id": 76710070,
+               "name": "Cash",
+               "holder": "Martin James Chapman"
+            },
+            {
+               "id": 81345433,
+               "name": "Trading",
+               "holder": "Martin James Chapman"
+            }
+          ]
+       }   
+   ]
+}
