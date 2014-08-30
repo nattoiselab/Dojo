@@ -1,0 +1,21 @@
+<div>
+<p>
+<label for="accountname">Account Name</label>
+<input type="text" name="accountname" data-dojo-type="dijit/form/TextBox" data-dojo-attach-point="accountnameNode" />
+</p>
+
+<p>
+<label for="accountname">Account Number</label>
+<input type="text" name="accountnumber" data-dojo-type="dijit/form/NumberTextBox" data-dojo-attach-point="accountnumberNode" data-dojo-props="constraints:{min:0,max:99999999,pattern:00000000}"/>
+</p>
+
+<p>
+<label for="accountname">Sort Code</label>
+<input type="text" name="sortcode" data-dojo-type="dijit/form/NumberTextBox" data-dojo-attach-point="sortcodeNode" data-dojo-props="constraints:{min:0,max:999999,pattern:000000}"/>
+</p>
+
+<p>
+<label for="balance">Balance in p</label>
+<input type="text" name="balance" data-dojo-type="dijit/form/NumberSpinner" data-dojo-attach-point="balanceNode" value="0"/>
+</p>
+</div>
