@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/dojo/1.10.0/dijit/themes/claro/claro.css" media="screen">
+
+	<script>dojoConfig = {parseOnLoad: true}</script>
+	<script src='../../../../DojoTutorial/Shared/dojo-release-1.10.0/dojo/dojo.js'></script>
+</head>
+
+<body class="claro">
+	<h1>Dojo Form Widget > dijit/form/Button (1)</h1>
+	<h2>Create a simple button declaratively</h2>
+    <button data-dojo-type="dijit/form/Button" 
+    		type="button">Click Me!
+    
+    	<script type="dojo/on" .
+    			data-dojo-event="click" 
+	    		data-dojo-args="evt">
+        	require(["dojo/dom"], function(dom){
+	            dom.byId("result2").innerHTML += "Thank you! ";
+        	});
+    	</script>
+	</button>
+
+	<button id="btn" data-dojo-type="dijit/form/Button"
+        data-dojo-props="
+            onClick: function(){ console.log('First button was clicked!'); }">
+        Click Me!
+    </button>
+    <script>
+        // load requirements for declarative widgets in page content
+        require(["dijit/form/Button", "dojo/parser", "dojo/domReady!"]);
+    </script>
+	
+	<div id="result2"></div>
+</body>
+</html>
