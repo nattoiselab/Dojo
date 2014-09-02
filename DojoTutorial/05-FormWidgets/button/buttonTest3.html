@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Demo: Dijit Buttons</title>
+		<link rel="stylesheet" href="buttonTest3.css" 
+			media="screen">
+		<link rel="stylesheet" 
+			href="../../../../DojoTutorial/Shared/dojo-release-1.10.0/dijit/themes/claro/claro.css" 
+			media="screen">
+			
+		 
+	</head>
+	<body class="claro">
+		<h1>Demo: A button using an icon (programmatic)</h1>
+		<p>
+			Below, we see <code>dijit/form/Button</code> in three forms: as a standard button, and
+			using an icon with no label and another one with label.  Be sure to open the console to see messages when clicking
+			the buttons!
+		</p>
+		<div>
+			<button id="btn1a" data-dojo-type="dijit/form/Button"
+				data-dojo-props="
+					onClick:function(){ console.log('First button was clicked!'); }">
+			Click Me without label
+			</button>
+			<button id="btn1b" data-dojo-type="dijit/form/Button"
+				data-dojo-props="
+					label: 'Click me with label',
+					onClick:function(){ console.log('First button was clicked!'); }">
+			</button>
+			<button id="btn2a" data-dojo-type="dijit/form/Button"
+				data-dojo-props="
+					iconClass:'dijitIconNewTask',
+					showLabel:false,
+					title:'dijit_button',
+					onClick:function(){ console.log('Second button was clicked!'); }">
+				Click Me!
+			</button>
+			<button id="btn2b" data-dojo-type="dijit/form/Button"
+				data-dojo-props="
+					iconClass:'dijitIconNewTask',
+					showLabel:true,
+					onClick:function(){ console.log('Third button was clicked!'); }">
+				Click Me with icon
+			</button>
+			<p>
+			<b><i>Explanation:</i></b>
+			<li><code>iconClass:' '</code>: indicates what CSS class to use (to apply an image sprite)</li>
+			<li><code>showLabel: true</code>: determines whether to show any text in the button</li>
+			</li>
+			<p>
+			<p>
+			<b><i>Reference:</i></b>
+			<p>
+			<a href="http://dojotoolkit.org/documentation/tutorials/1.10/themes_buttons_textboxes/">
+				http://dojotoolkit.org/documentation/tutorials/1.10/themes
+			</a>
+			<br/>
+			<a href="http://dojotoolkit.org/documentation/tutorials/1.10/themes_buttons_textboxes/demo/Button.php">
+				http://dojotoolkit.org/documentation/tutorials/1.10/themes_buttons_textboxes/demo/Button.php
+			</a>
+		</div>
+		<!-- load dojo and provide config via data attribute -->
+		<script src="../../../../DojoTutorial/Shared/dojo-release-1.10.0/dojo/dojo.js" data-dojo-config="isDebug: true, async: true, parseOnLoad: true"></script>
+		<script type="text/javascript" src="buttonTest3.js">
+		</script>
+	</body>
+</html>
