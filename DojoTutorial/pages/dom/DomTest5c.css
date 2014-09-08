@@ -1,0 +1,13 @@
+.oldStyle {
+	background-color: #7c7c7c;
+	color: #ffbf00;
+	border: 1px solid #ffbf00;
+	padding: 20px;
+}
+
+.newStyle {
+	background-color: #491f00;
+	color: #36d900;
+	border: 1px solid #black;
+	padding: 10px;
+}
