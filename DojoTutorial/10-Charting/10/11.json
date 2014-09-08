@@ -1,0 +1,6 @@
+[
+	{ id: "Rent", value: 400 },
+	{ id: "Car", value: 200 },
+	{ id: "Food", value: 100 },
+	{ id: "Other", value: 300 }	
+]
