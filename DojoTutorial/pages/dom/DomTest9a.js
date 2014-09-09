@@ -6,9 +6,9 @@ require([ "dojo/dom-attr",
 	var output = "";
 	
 	if (domAttr.has("model", "name")) {
-		output += "Node model has attribute name <br/>";
+		output += "Node 'model' has attribute name <br/>";
 	} else {
-		output += "Node model does not have attribute name <br/>";
+		output += "Node 'model' does not have attribute name <br/>";
 	}
 	if (domAttr.has("model", "baz")) {
 		output += "Node 'model' has attribute baz <br/>";
