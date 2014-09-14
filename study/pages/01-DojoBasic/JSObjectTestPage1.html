@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS Object(1)</title>
+	<script type="text/javascript">
+		// Creation of objects using Object
+		myObject = new Object();
+		myObject.prop1 = "Created using Object";
+		myObject.sayHello = function(){
+			alert("hello Object");
+		};
+		alert(myObject.prop1);
+		myObject.sayHello();
+		
+		// Creation of objects using literal notation
+		myObj = {prop: "Created using literal notation",
+				sayHi: function(){
+					alert("Hi literal notation");
+				}};
+		alert(myObj.prop);
+		myObj.sayHi();
+		
+		// Creation of objects using template
+		function person(firstname, lastname, age, eyecolor){
+			this.firstname = firstname;
+			this.lastname = lastname;
+			this.age = age;
+			this.eyecolor = eyecolor;
+			function sayHey(){
+				alert("Hey, template");
+			}
+			this.sayHey = sayHey;
+		}
+		var person1 = new person("John", "Doe", 50, "blue");
+		alert(person1.firstname);
+		person1.sayHey();
+		
+		var person2 = new person("Jenny", "Smith", 40, "pink");
+		alert(person2.firstname);
+		
+		// prototype property of function
+		person.prototype.newProp = "I am new to Person";
+		alert(person1.newProp);
+		person2.newProp = "I am new to Person and I am in person2";
+		
+		alert(person2.newProp);
+	</script>
+</head>
+<body>
+	<h1>JS Object(1)</h1>
+</body>
+</html>
