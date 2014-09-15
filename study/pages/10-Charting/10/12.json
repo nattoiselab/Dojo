@@ -1,0 +1,6 @@
+[
+	{ id: "Mortgage", value: 700 },
+	{ id: "Car", value: 0 },
+	{ id: "Food", value: 200 },
+	{ id: "Other", value: 250 }	
+]
