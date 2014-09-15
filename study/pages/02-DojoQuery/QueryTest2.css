@@ -1,0 +1,62 @@
+TD {
+	border-style:solid;
+	font-size: 24pt;
+}
+
+.evenCheck{ 
+	color: yellow;
+	background-color: blue;
+}
+
+.oddCheck{ 	
+   color: blue;
+   background-color: yellow;
+}
+
+.news {
+	border-color: black;
+	border-style: solid;
+	border-width: 3px;
+	
+}
+
+.news P.headline {
+	display:block;
+	color: white;
+   background-color: blue;
+}
+
+.news P {
+	display:none
+}
+
+.news.expanded P {
+	display:block
+}
+
+article {
+	border-color: black;
+	border-style: solid;
+	border-width: 3px;
+	
+}
+
+article P.headline {
+	display:block;
+	color: white;
+   background-color: blue;
+}
+
+article P {
+	display:none
+}
+
+article.expanded P {
+	display:block
+}
+
+
+
+	
+
+	
