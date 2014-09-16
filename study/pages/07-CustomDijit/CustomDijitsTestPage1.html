@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Custom Dijits (1)</title>
+	<link rel="stylesheet" href="../../../node_modules/dijit/themes/claro/claro.css">
+	<!-- load Dojo -->
+	<script 
+    	type="text/javascript" 
+    	data-dojo-config="'parseOnLoad': false, 
+    					  'async': true,
+    					  'paths': {
+    					  		'customDijits' :'/customDijits'
+    					  		}" 
+    	src="../../../node_modules/dojo/dojo.js"></script>
+	 <script
+		type="text/javascript"
+		src="CustomDijitsTest1.js"
+	></script>
+</head>
+
+<body class="claro">
+	<h2>Custom Dijits (1)</h2>
+    <h2 id="greeting">Hello</h2>
+    
+	<div style="width:540px;">
+			<div>
+				<h1>dijit/form/FilteringSelect</h1>
+				<label for="stateSelect">Currency:</label>
+				<div id="currencySelect"></div>
+			</div>
+			<select data-dojo-type="customDijits/JsonRestFilteringSelect" data-dojo-props="url: '07/accounts.json'">
+			</select>
+			<!-- 
+			<div style="width:50%;float: right;"><h1>Values:</h1>
+				<div><strong>value:</strong> <span id="value"></span></div>
+				<div><strong>displayedValue:</strong> <span id="displayedValue"></span></div>
+				<h5>*Note how the submitted value will be the identity of the store item</h5>
+			</div>
+			 -->
+	</div>
+	
+</body>
+</html>
