@@ -1,0 +1,8 @@
+[
+	{ "abbreviation": "USD", "name": "United States Dollar" },
+	{ "abbreviation": "EUR", "name": "Euro Member Countries" },
+	{ "abbreviation": "GBP", "name": "United Kingdom Pound" },
+	{ "abbreviation": "TRY", "name": "Turkey Lira" },
+	{ "abbreviation": "HKD", "name": "Hong Kong Dollar" },
+	{ "abbreviation": "CNY", "name": "Chinese Yuan Renminbi" }
+]
