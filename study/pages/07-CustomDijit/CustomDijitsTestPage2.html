@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="../../Shared/dojo-release-1.8.1/dijit/themes/claro/claro.css">
+<title>Custom Dijits (2)</title>
+	<!-- load Dojo -->
+	<script 
+    	type="text/javascript" 
+    	data-dojo-config="'parseOnLoad': false, 
+    					  'async': true,
+    					  'paths': {
+    					  		'customDijits' :'/customDijits'
+    					  		}" 
+    	src="../../../node_modules/dojo/dojo.js"></script>
+	 <script
+		type="text/javascript"
+		src="CustomDijitsTest1.js"
+	></script>
+</head>
+
+<body class="claro">
+
+<select data-dojo-type="customDijits/JsonRestFilteringSelect" data-dojo-props="url: '07/accounts.json'">
+</select>
+
+<select data-dojo-type="customDijits/JsonRestFilteringSelect" data-dojo-props="url: '07a/customers.json'">
+</select>
+
+<select data-dojo-type="customDijits/JsonRestFilteringSelect" data-dojo-props="url: '07a/branches.json'">
+</select>
+
+</body>
+</html>
